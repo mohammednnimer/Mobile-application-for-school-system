@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#669ab9">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        tools:ignore="MissingConstraints">
+
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Main Dashboard"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/CrdAddStudent"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/btnSubjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Send Marks"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/mark" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/CrdAddSubject"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/btnSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Teacher Schedule"
+                        android:textColor="@color/black"
+                        android:textSize="17.7sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/schedule_icon" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/CrdBuildSchedule"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/btnAssignments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Send Assignments"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/qa" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="273dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="#7CD7D9"-->
+    <!--    android:padding="16dp">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvWelcome"-->
+    <!--        style="@style/SubtitleText"-->
+    <!--        android:layout_width="379dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="102dp"-->
+    <!--        android:layout_marginBottom="116dp"-->
+    <!--        android:text="@string/welcome_to_student_page"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/btnMarks"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/tvWelcome"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="0dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginTop="70dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="Welcome to student Page"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textAlignment="center"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textSize="20sp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textStyle="bold"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnMarks"-->
+    <!--        style="@style/PrimaryButton"-->
+    <!--        android:layout_width="137dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:layout_marginStart="75dp"-->
+    <!--        android:layout_marginEnd="15dp"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--        android:text="@string/marks"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/btnSubjects"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btnAssignments"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnAssignments"-->
+    <!--        style="@style/PrimaryButton"-->
+    <!--        android:layout_width="135dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:layout_marginTop="1dp"-->
+    <!--        android:layout_marginEnd="73dp"-->
+    <!--        android:text="@string/assignments"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btnMarks"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/btnMarks" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSubjects"-->
+    <!--        style="@style/PrimaryButton"-->
+    <!--        android:layout_width="135dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:layout_marginStart="73dp"-->
+    <!--        android:layout_marginEnd="18dp"-->
+    <!--        android:layout_marginBottom="294dp"-->
+    <!--        android:text="@string/subjects"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btnSchedule"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnMarks" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSchedule"-->
+    <!--        style="@style/PrimaryButton"-->
+    <!--        android:layout_width="135dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:layout_marginEnd="72dp"-->
+    <!--        android:layout_marginBottom="1dp"-->
+    <!--        android:text="@string/student_schedule"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/btnSubjects"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btnSubjects" />-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

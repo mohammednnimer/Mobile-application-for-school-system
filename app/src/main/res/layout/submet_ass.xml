@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C89B3"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/assignmentCard"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="#A0B6BC"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/assTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Assignment Title"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            <TextView
+                android:id="@+id/assDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DESC:"
+                android:textColor="#444"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+            </ScrollView>
+            <TextView
+                android:id="@+id/DueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#e0e0e0"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="Due Date : 2025-05-31"
+                android:layout_gravity="center"
+                android:textColor="#444"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/uploadFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B5"
+                android:text="Upload File"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sendAssignment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Send Assignment"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/assignmentCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

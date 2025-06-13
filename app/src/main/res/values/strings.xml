@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Project_mobile</string>
+    <string name="welcome">Welcome</string>
+    <string name="back">Back</string>
+
+    <string name="welcome_to_student_page">Welcome to student Page</string>
+    <string name="marks">Marks</string>
+    <string name="assignments">Assignments</string>
+    <string name="subjects">Subjects</string>
+    <string name="student_schedule">Student schedule</string>
+
+    <string name="your_academic_schedule">Your academic schedule</string>
+    <string name="time_day">Time/Day</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+
+    <string name="subject_name">Subject Name</string>
+    <string name="subject_description">This subject covers advanced programming concepts, problem-solving skills, and practical application of computer science fundamentals.</string>
+    <string name="taught_by">Taught by: %s</string>
+    <string name="google_maps_key">AIzaSyCJMZfn5L4HMpbF7oKfqJjbuB9DysEbXdI</string>
+    <string name="map_content_description">Google Maps showing location with marker</string>
+
+
+    <string-array name="mark_types">
+        <item>Exam</item>
+        <item>Assignment</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>
